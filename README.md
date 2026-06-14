@@ -1,4 +1,3 @@
-<img width="1868" height="995" alt="Screenshot 2026-06-14 at 11-08-50 frontend" src="https://github.com/user-attachments/assets/b5a60c1d-06e7-4c26-8fb9-d7cbf171928a" /># Sales Analytics Platform
 
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
@@ -276,7 +275,8 @@ It demonstrates:
 
 ## Demo
 
-Coming soon.
+[Gravação_de_tela_20260614_111226.webm](https://github.com/user-attachments/assets/252b1757-3bfa-4d83-a389-1b4f8abe9b9a)
+
 
 ## 📸 Screenshots
 
