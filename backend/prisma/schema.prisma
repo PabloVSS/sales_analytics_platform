@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["sales"]
+}
+
+model Customers {
+  id         String   @id @default(uuid()) @db.Uuid
+  name       String
+  email      String   @unique
+  phone      String?
+  created_at DateTime @default(now()) @db.Timestamptz()
+  updated_at DateTime @default(now()) @updatedAt @db.Timestamptz()
+  orders     Orders[]
+
+  @@schema("sales")
+  @@map("customers")
+}
+
+model Products {
+  id         String       @id @default(uuid()) @db.Uuid
+  name       String
+  price      Decimal      @db.Decimal(10, 2)
+  category   String
+  created_at DateTime     @default(now()) @db.Timestamptz()
+  updated_at DateTime     @default(now()) @updatedAt @db.Timestamptz()
+  order_items OrderItems[]
+
+  @@schema("sales")
+  @@map("products")
+}
+
+model Orders {
+  id           String       @id @default(uuid()) @db.Uuid
+  customer_id  String       @db.Uuid
+  status       String       @default("PENDING")
+  total_amount Decimal      @db.Decimal(10, 2)
+  created_at   DateTime     @default(now()) @db.Timestamptz()
+  updated_at   DateTime     @default(now()) @updatedAt @db.Timestamptz()
+  customer     Customers    @relation(fields: [customer_id], references: [id])
+  order_items  OrderItems[]
+
+  @@schema("sales")
+  @@map("orders")
+}
+
+model OrderItems {
+  id         String   @id @default(uuid()) @db.Uuid
+  order_id   String   @db.Uuid
+  product_id String   @db.Uuid
+  quantity   Int
+  unit_price Decimal  @db.Decimal(10, 2)
+  order      Orders   @relation(fields: [order_id], references: [id])
+  product    Products @relation(fields: [product_id], references: [id])
+
+  @@schema("sales")
+  @@map("order_items")
+}
+
+model Users {
+  id            String   @id @default(uuid()) @db.Uuid
+  email         String   @unique
+  password_hash String
+  role          String   @default("ADMIN")
+  created_at    DateTime @default(now()) @db.Timestamptz()
+  updated_at    DateTime @default(now()) @updatedAt @db.Timestamptz()
+
+  @@schema("sales")
+  @@map("users")
+}
