@@ -1,4 +1,4 @@
-# Sales Analytics Platform
+<img width="1868" height="995" alt="Screenshot 2026-06-14 at 11-08-50 frontend" src="https://github.com/user-attachments/assets/b5a60c1d-06e7-4c26-8fb9-d7cbf171928a" /># Sales Analytics Platform
 
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
@@ -155,16 +155,16 @@ GET /dashboard/categories
 GET /customers
 GET /customers/:id
 ```
-## Products
+### Products
 ```http
 GET /products
 ```
-## Orders
+### Orders
 ```http
 GET /orders
 GET /orders/:id
 ```
-##Users
+### Users
 ```http
 GET /users
 ```
@@ -278,7 +278,51 @@ It demonstrates:
 
 Coming soon.
 
-Screenshots and live deployment will be available in future releases.
+## 📸 Screenshots
+
+### Login Page
+
+<img width="1861" height="988" alt="login" src="https://github.com/user-attachments/assets/dff55384-b2f5-4409-9ccf-7f9b8bd02cd2" />
+
+
+### Analytics Dashboard
+
+-    **Dark**
+
+<img width="1868" height="995" alt="dashboard_escuro" src="https://github.com/user-attachments/assets/b20eee71-c071-4907-ba4c-1a47f564e16b" />
+
+-    **Light**
+
+  <img width="1868" height="995" alt="dashboard_light" src="https://github.com/user-attachments/assets/600249ec-5793-468b-af86-c149b7a62e29" />
+
+
+### Products
+
+<img width="1868" height="995" alt="tela_produtos" src="https://github.com/user-attachments/assets/cd4fa066-11ad-4853-8580-37ca653de6b6" />
+
+
+### Orders 
+
+<img width="1868" height="995" alt="pedidos" src="https://github.com/user-attachments/assets/157bf3b6-5ef6-4aee-85f6-9e57e6b1442f" />
+
+### Orders Details
+
+<img width="1868" height="995" alt="detalhe_pedidos" src="https://github.com/user-attachments/assets/c4311340-4446-40b6-a100-81c7a3a2846b" />
+
+
+### Customer 
+
+<img width="1868" height="995" alt="clientes" src="https://github.com/user-attachments/assets/c189e2ad-3ca1-435e-a27b-d9b8308fb7a9" />
+
+### Customer Details
+
+<img width="1868" height="995" alt="Screenshot 2026-06-14 at 11-08-50 frontend" src="https://github.com/user-attachments/assets/0e60884a-0a9c-4512-a6aa-f59cf6690c7f" />
+
+
+### User Management (Admin)
+
+<img width="1868" height="995" alt="Screenshot 2026-06-14 at 10-36-23 frontend" src="https://github.com/user-attachments/assets/d5c67fe3-9b5f-487e-be1d-54b178145cd3" />
+
 
 # Contact
 
